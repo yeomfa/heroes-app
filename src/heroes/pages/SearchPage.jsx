@@ -33,6 +33,7 @@ export const SearchPage = () => {
       <h1>Search</h1>
       <div className="col-5">
         <form 
+          aria-label="form"
           className="d-flex"
           onSubmit={ onSearchSubmit }
         >
@@ -61,12 +62,14 @@ export const SearchPage = () => {
         {/* } */}
 
         <div 
+          aria-label="alert-search"
           className="alert alert-primary"
           style={{ display: showSearch ? '' : 'none' }}
         > 
           Search a hero 
         </div>
         <div 
+          aria-label="alert-error"
           className="alert alert-danger"
           style={{ display: showError ? '' : 'none' }}
         > 
